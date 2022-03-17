@@ -1,0 +1,23 @@
+1.请求的响应延迟（Cycle）okk
+
+2.记录下NVMain运行完一个负载要多久（minute）  okk
+
+3.请求在Stash和ORAM tree的每一层的命中情况       okk   
+vector<uint64_t> HIT_LOCATION
+
+4.Early Reshuffle在ORAM tree的每一层的发生次数  okk  
+ vector<uint64_t> EARLY_RESHUFFLE_COUNT
+
+5.Evict Path执行的次数   okk   EVICTION_COUNT
+
+6.Stash存放的数据块数量，在每10亿条指令的时候，记录一下，通过(0 B address)来触发，可以直接打印出来，也可以声明一个vector记录一下  okk 
+
+7.每一层的bucket的平均负载，就是记录ORAM tree的一层中包含有多少个数据块，然后平均分配到每一个桶是多少个，通过读取meta_tree中的信息获取，唯一要小心的是要准确地识别到这一层的起始桶和结束桶
+
+
+
+
+
+
+
+
